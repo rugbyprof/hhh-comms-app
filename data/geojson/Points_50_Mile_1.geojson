@@ -1,0 +1,497 @@
+{
+    "routes": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.598562,
+                        33.940294
+                    ],
+                    [
+                        -98.602846,
+                        33.940932
+                    ],
+                    [
+                        -98.607126,
+                        33.941589
+                    ],
+                    [
+                        -98.611404,
+                        33.942256
+                    ],
+                    [
+                        -98.615676,
+                        33.942949
+                    ],
+                    [
+                        -98.619944,
+                        33.943657
+                    ],
+                    [
+                        -98.624223,
+                        33.944318
+                    ],
+                    [
+                        -98.628505,
+                        33.944972
+                    ],
+                    [
+                        -98.63279,
+                        33.945609
+                    ],
+                    [
+                        -98.637069,
+                        33.946271
+                    ],
+                    [
+                        -98.641346,
+                        33.94694
+                    ],
+                    [
+                        -98.645623,
+                        33.947615
+                    ],
+                    [
+                        -98.649902,
+                        33.948273
+                    ],
+                    [
+                        -98.654183,
+                        33.948929
+                    ],
+                    [
+                        -98.658466,
+                        33.949577
+                    ],
+                    [
+                        -98.662748,
+                        33.950225
+                    ],
+                    [
+                        -98.66703,
+                        33.950872
+                    ],
+                    [
+                        -98.667905,
+                        33.951003
+                    ],
+                    [
+                        -98.667919,
+                        33.950423
+                    ],
+                    [
+                        -98.670431,
+                        33.950831
+                    ],
+                    [
+                        -98.67471,
+                        33.951477
+                    ],
+                    [
+                        -98.67899,
+                        33.952134
+                    ],
+                    [
+                        -98.683269,
+                        33.952794
+                    ],
+                    [
+                        -98.687546,
+                        33.95347
+                    ],
+                    [
+                        -98.691823,
+                        33.954142
+                    ],
+                    [
+                        -98.696101,
+                        33.954812
+                    ],
+                    [
+                        -98.700378,
+                        33.955482
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "legs": [
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.4,
+                    "duration": 96.6,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.2,
+                    "duration": 96.3,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.2,
+                    "duration": 96.3,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.4,
+                    "duration": 96.6,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.3,
+                    "duration": 96.4,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.2,
+                    "duration": 96.2,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.3,
+                    "duration": 96.4,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.3,
+                    "duration": 96.5,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.3,
+                    "duration": 96.3,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.3,
+                    "duration": 96.4,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.4,
+                    "duration": 96.4,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.2,
+                    "duration": 96.4,
+                    "distance": 401.5
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.4,
+                    "duration": 96.6,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.2,
+                    "duration": 96.3,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.4,
+                    "duration": 96.6,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.3,
+                    "duration": 96.4,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 123.4,
+                    "duration": 112.8,
+                    "distance": 394.5
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 102.2,
+                    "duration": 102.2,
+                    "distance": 402.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 96.4,
+                    "duration": 96.4,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 96.3,
+                    "duration": 96.3,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 96.4,
+                    "duration": 96.4,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 96.3,
+                    "duration": 96.3,
+                    "distance": 401.6
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 96.4,
+                    "duration": 96.4,
+                    "distance": 401.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 96.4,
+                    "duration": 96.4,
+                    "distance": 401.6
+                }
+            ],
+            "weight_name": "cyclability",
+            "weight": 3176.600000000001,
+            "duration": 2335.9,
+            "distance": 9633.200000000003
+        }
+    ],
+    "waypoints": [
+        {
+            "distance": 0.11091781233476909,
+            "name": "Business 287",
+            "location": [
+                -98.598562,
+                33.940294
+            ]
+        },
+        {
+            "distance": 1.5774327557693073,
+            "name": "Business 287",
+            "location": [
+                -98.602846,
+                33.940932
+            ]
+        },
+        {
+            "distance": 2.59266633821985,
+            "name": "Business 287",
+            "location": [
+                -98.607126,
+                33.941589
+            ]
+        },
+        {
+            "distance": 2.827903357403234,
+            "name": "Business 287",
+            "location": [
+                -98.611404,
+                33.942256
+            ]
+        },
+        {
+            "distance": 1.1244898435136832,
+            "name": "Business 287",
+            "location": [
+                -98.615676,
+                33.942949
+            ]
+        },
+        {
+            "distance": 2.266023516294629,
+            "name": "Business 287",
+            "location": [
+                -98.619944,
+                33.943657
+            ]
+        },
+        {
+            "distance": 0.9064094065649168,
+            "name": "Business 287",
+            "location": [
+                -98.624223,
+                33.944318
+            ]
+        },
+        {
+            "distance": 0.6719000837120827,
+            "name": "Business 287",
+            "location": [
+                -98.628505,
+                33.944972
+            ]
+        },
+        {
+            "distance": 0.7981457247961626,
+            "name": "Business 287",
+            "location": [
+                -98.63279,
+                33.945609
+            ]
+        },
+        {
+            "distance": 0.24033595446533793,
+            "name": "Business 287",
+            "location": [
+                -98.637069,
+                33.946271
+            ]
+        },
+        {
+            "distance": 1.0152462501506392,
+            "name": "Business 287",
+            "location": [
+                -98.641346,
+                33.94694
+            ]
+        },
+        {
+            "distance": 3.0457387506912825,
+            "name": "Business 287",
+            "location": [
+                -98.645623,
+                33.947615
+            ]
+        },
+        {
+            "distance": 3.2810955524236856,
+            "name": "Business 287",
+            "location": [
+                -98.649902,
+                33.948273
+            ]
+        },
+        {
+            "distance": 2.0304925003012784,
+            "name": "Business 287",
+            "location": [
+                -98.654183,
+                33.948929
+            ]
+        },
+        {
+            "distance": 0.7981457251006371,
+            "name": "East Highway Street",
+            "location": [
+                -98.658466,
+                33.949577
+            ]
+        },
+        {
+            "distance": 1.5774168200070693,
+            "name": "East Highway Street",
+            "location": [
+                -98.662748,
+                33.950225
+            ]
+        },
+        {
+            "distance": 0.24031684616439017,
+            "name": "East Highway Street",
+            "location": [
+                -98.66703,
+                33.950872
+            ]
+        },
+        {
+            "distance": 0.36965569340500554,
+            "name": "South Jackson Avenue",
+            "location": [
+                -98.670431,
+                33.950831
+            ]
+        },
+        {
+            "distance": 0.22183744796861554,
+            "name": "West Smith Avenue",
+            "location": [
+                -98.67471,
+                33.951477
+            ]
+        },
+        {
+            "distance": 1.2340258925875927,
+            "name": "West Smith Avenue",
+            "location": [
+                -98.67899,
+                33.952134
+            ]
+        },
+        {
+            "distance": 0.3453505519417065,
+            "name": "West Smith Avenue",
+            "location": [
+                -98.683269,
+                33.952794
+            ]
+        },
+        {
+            "distance": 1.015234636619593,
+            "name": "West Smith Avenue",
+            "location": [
+                -98.687546,
+                33.95347
+            ]
+        },
+        {
+            "distance": 0.5622405341445986,
+            "name": "Old Electra Road",
+            "location": [
+                -98.691823,
+                33.954142
+            ]
+        },
+        {
+            "distance": 0.3453505519417065,
+            "name": "Old Electra Road",
+            "location": [
+                -98.696101,
+                33.954812
+            ]
+        },
+        {
+            "distance": 1.2512080441407254,
+            "name": "Old Electra Road",
+            "location": [
+                -98.700378,
+                33.955482
+            ]
+        }
+    ],
+    "code": "Ok",
+    "uuid": "fyAx0oqDY9eXbiGYHYLsLALsKoJSHzWnDABluTl10_pk6HcIXBiO7g=="
+}

@@ -1,0 +1,441 @@
+{
+    "routes": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.517903,
+                        33.972488
+                    ],
+                    [
+                        -98.516314,
+                        33.969433
+                    ],
+                    [
+                        -98.514675,
+                        33.966318
+                    ],
+                    [
+                        -98.51254,
+                        33.961998
+                    ],
+                    [
+                        -98.512394,
+                        33.963103
+                    ],
+                    [
+                        -98.512611,
+                        33.962156
+                    ],
+                    [
+                        -98.513602,
+                        33.964295
+                    ],
+                    [
+                        -98.512144,
+                        33.961275
+                    ],
+                    [
+                        -98.510375,
+                        33.957962
+                    ],
+                    [
+                        -98.508627,
+                        33.95464
+                    ],
+                    [
+                        -98.506905,
+                        33.95131
+                    ],
+                    [
+                        -98.505163,
+                        33.947986
+                    ],
+                    [
+                        -98.503458,
+                        33.944648
+                    ],
+                    [
+                        -98.501726,
+                        33.94132
+                    ],
+                    [
+                        -98.50079,
+                        33.937846
+                    ],
+                    [
+                        -98.500785,
+                        33.934219
+                    ],
+                    [
+                        -98.500574,
+                        33.930591
+                    ],
+                    [
+                        -98.500703,
+                        33.92881
+                    ],
+                    [
+                        -98.499544,
+                        33.927327
+                    ],
+                    [
+                        -98.497087,
+                        33.924333
+                    ],
+                    [
+                        -98.496681,
+                        33.923831
+                    ],
+                    [
+                        -98.499631,
+                        33.922099
+                    ],
+                    [
+                        -98.500128,
+                        33.921808
+                    ],
+                    [
+                        -98.498014,
+                        33.919206
+                    ],
+                    [
+                        -98.495569,
+                        33.916205
+                    ],
+                    [
+                        -98.49605,
+                        33.916801
+                    ],
+                    [
+                        -98.497087,
+                        33.916223
+                    ],
+                    [
+                        -98.497522,
+                        33.916775
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "legs": [
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 177.5,
+                    "duration": 88.6,
+                    "distance": 370.1
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 181.5,
+                    "duration": 90.8,
+                    "distance": 378
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 496.9,
+                    "duration": 192.1,
+                    "distance": 653.2
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 460.7,
+                    "duration": 178.3,
+                    "distance": 365
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 366.9,
+                    "duration": 127.2,
+                    "distance": 391.8
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 193.3,
+                    "duration": 96.6,
+                    "distance": 403
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 193.6,
+                    "duration": 97,
+                    "distance": 403.3
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 193.5,
+                    "duration": 96.8,
+                    "distance": 403
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 193.5,
+                    "duration": 96.6,
+                    "distance": 403.2
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 193.6,
+                    "duration": 96.7,
+                    "distance": 403.2
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 193.5,
+                    "duration": 96.9,
+                    "distance": 403.2
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 192.9,
+                    "duration": 96.3,
+                    "distance": 402
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 193.7,
+                    "duration": 96.9,
+                    "distance": 403.4
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 194.6,
+                    "duration": 97.3,
+                    "distance": 405
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 104.1,
+                    "duration": 98.1,
+                    "distance": 402.7
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 96.8,
+                    "duration": 96.8,
+                    "distance": 403
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 143.3,
+                    "duration": 100.1,
+                    "distance": 400.8
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 159.7,
+                    "duration": 107.5,
+                    "distance": 405.2
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 148.8,
+                    "duration": 96.7,
+                    "distance": 402.9
+                },
+                {
+                    "steps": [],
+                    "summary": "",
+                    "weight": 87.5,
+                    "duration": 77.2,
+                    "distance": 268.5
+                }
+            ],
+            "weight_name": "cyclability",
+            "weight": 4165.9,
+            "duration": 2124.5,
+            "distance": 8070.499999999999
+        }
+    ],
+    "waypoints": [
+        {
+            "distance": 962.0542380368175,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.517903,
+                33.972488
+            ]
+        },
+        {
+            "distance": 798.776017235856,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.516314,
+                33.969433
+            ]
+        },
+        {
+            "distance": 633.9338036708323,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.514675,
+                33.966318
+            ]
+        },
+        {
+            "distance": 409.0327204372581,
+            "name": "",
+            "location": [
+                -98.512394,
+                33.963103
+            ]
+        },
+        {
+            "distance": 111.95496731650486,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.513602,
+                33.964295
+            ]
+        },
+        {
+            "distance": 0.5125623724131805,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.512144,
+                33.961275
+            ]
+        },
+        {
+            "distance": 2.004739013404234,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.510375,
+                33.957962
+            ]
+        },
+        {
+            "distance": 2.2183126383841323,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.508627,
+                33.95464
+            ]
+        },
+        {
+            "distance": 3.710918628559316,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.506905,
+                33.95131
+            ]
+        },
+        {
+            "distance": 0.8962708101671226,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.505163,
+                33.947986
+            ]
+        },
+        {
+            "distance": 2.00573334126296,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.503458,
+                33.944648
+            ]
+        },
+        {
+            "distance": 1.3238483122680618,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.501726,
+                33.94132
+            ]
+        },
+        {
+            "distance": 0.3698719202225931,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.50079,
+                33.937846
+            ]
+        },
+        {
+            "distance": 4.808334974720151,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.500785,
+                33.934219
+            ]
+        },
+        {
+            "distance": 4.354856479774385,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.500574,
+                33.930591
+            ]
+        },
+        {
+            "distance": 0.8625920975831023,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.499544,
+                33.927327
+            ]
+        },
+        {
+            "distance": 3.354220113376346,
+            "name": "Burkburnett Road",
+            "location": [
+                -98.497087,
+                33.924333
+            ]
+        },
+        {
+            "distance": 1.2424751878679425,
+            "name": "Lincoln Street",
+            "location": [
+                -98.499631,
+                33.922099
+            ]
+        },
+        {
+            "distance": 5.9396444852889045,
+            "name": "North Scott Avenue",
+            "location": [
+                -98.498014,
+                33.919206
+            ]
+        },
+        {
+            "distance": 2.569492126750222,
+            "name": "Scott Avenue",
+            "location": [
+                -98.495569,
+                33.916205
+            ]
+        },
+        {
+            "distance": 0.38069168446066676,
+            "name": "Lamar Street",
+            "location": [
+                -98.497522,
+                33.916775
+            ]
+        }
+    ],
+    "code": "Ok",
+    "uuid": "8I_vBxE79I2Sy_CnidYSFAWzbppVStsASKDTx5G6IZBjHwz77Nrdrg=="
+}
