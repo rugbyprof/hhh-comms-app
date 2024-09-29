@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet GeoJSON Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 600px;"></div>
+    <script>
+        var map = L.map('map').setView([33.91816700, -98.49758300], 10);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+        }).addTo(map);
+
+        var geojsonFeature = {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "stroke": "#0000FF",
+                        "stroke-width": 2,
+                        "stroke-opacity": 1
+                    },
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [-98.49758300, 33.91816700],
+                            [-98.66681700, 33.95093300],
+                            [-98.81810000, 33.91180000],
+                            [-98.90993300, 34.02660000],
+                            [-98.82885000, 34.09138300],
+                            [-98.63087900, 34.09661900],
+                            [-98.55803500, 34.08978900],
+                            [-98.55820000, 34.07895000],
+                            [-98.42525000, 34.04438300],
+                            [-98.32645000, 34.08515000],
+                            [-98.37306700, 34.03045000],
+                            [-98.35438300, 33.94436700],
+                            [-98.83150000, 34.05800000],
+                            [-98.67933300, 34.06483300],
+                            [-98.55281700, 34.01368300],
+                            [-98.50904200, 33.98122000],
+                            [-98.62057800, 33.94947800],
+                            [-98.69097800, 33.96647900],
+                            [-98.49750000, 33.91686700],
+                            [-98.51160000, 33.91676700],
+                            [-98.49725000, 33.91670000],
+                            [-98.44881700, 33.90051700],
+                            [-98.41569800, 33.91461400],
+                            [-98.47526300, 33.91400200]
+                        ]
+                    }
+                }
+            ]
+        };
+
+        L.geoJSON(geojsonFeature, {
+            style: function (feature) {
+                return {
+                    color: feature.properties.stroke,
+                    weight: feature.properties['stroke-width'],
+                    opacity: feature.properties['stroke-opacity']
+                };
+            }
+        }).addTo(map);
+    </script>
+</body>
+</html>
