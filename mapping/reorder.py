@@ -70,24 +70,52 @@ def random_hex_color() -> str:
 
 if __name__ == "__main__":
 
-    colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF", "#FF00FF"]
+    colors = [
+        "#FF0000",
+        "#00FF00",
+        "#0000FF",
+        "#FFFF00",
+        "#00FFFF",
+        "#FF00FF",
+        "#C0C0C0",
+        "#808080",
+        "#800000",
+        "#808000",
+        "#008000",
+        "#800080",
+        "#008080",
+        "#000080",
+    ]
 
     files = read_directory("./data/csv", "csv")
 
     r = 0
-    geo = GeoManager()
+
     for f in files:
-        properties = GeoProperties("line")
+        geo = GeoManager()
+        name = f.split("/")[-1].split(".")[0]
+        if "Points" in name:
+            name = name[7:]
+        print(name)
+        if "Rest" in name:
+            properties = GeoProperties("point")
+            properties.set_property("marker-color", colors[r % len(colors)])
+            properties.set_property("description", name)
+        else:
+            properties = GeoProperties("line")
+            properties.set_property("stroke", colors[r % len(colors)])
+            properties.set_property("description", name)
         points = read_points_from_csv(f, ("POINT_X", "POINT_Y"))
-        ordered_points = nearest_neighbor_route(points)
+        # ordered_points = nearest_neighbor_route(points)
         multiLinestring = []
-        for i in range(len(ordered_points) - 1):
+        for i in range(len(points) - 1):
             multiLinestring.append([points[i], points[i + 1]])
-        properties.set_property("stroke", colors[r])
-        properties.set_property("description", f)
+
         geo.add_multilinestring(multiLinestring, properties.get_properties())
-        if r == 3:
-            break
+        # if r == 3:
+        #     break
         r += 1
-    geoJson = geo.to_json()
-    print(geoJson)
+        geoJson = geo.to_json()
+        geoName = f.replace("csv", "geojson")
+        with open(geoName, "w") as f:
+            f.write(geoJson)
