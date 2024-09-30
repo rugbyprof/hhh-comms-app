@@ -348,3 +348,300 @@ https://api.tomtom.com/routing/1/calculateRoute/-122.4194,37.7749:34.0522,-118.2
 - **HERE Routing API**: Advanced routing with real-time traffic and multiple transport modes.
 - **Bing Maps Directions API**: Another reliable alternative with good free tier access.
 - **TomTom Routing API**: Focuses on navigation with traffic insights.
+
+---
+
+## GeoJson Visualization Properties
+
+So, geojson features have a properties section in each feature. The properties section is a place to add additional key:value pairs associated with a feature. Some libraries like **MapBox** or **Leaflet** use specific key:value pairs to change the visualization of a feature (colors, alpha, icons, etc.). Not all of these properties are supported universally, and are different between libraries. However, I listed a bunch below as a reference. (source chat gpt).
+
+Below is a list of common properties that are typically supported by **Leaflet** and **Mapbox** for **Points**, **LineStrings**, **MultiLineStrings**, and **Polygons**. These properties generally affect the **appearance** and **behavior** of the features. While the specifics might differ slightly between the two libraries, the core concepts are similar.
+
+### 1. **Points** (Markers or Circles)
+
+Points are typically rendered as markers, circle markers, or icons on the map. The following properties can be applied:
+
+#### **Common Properties for Points:**
+
+- **icon**: (Leaflet-specific) Allows you to specify a custom icon for the marker.
+  - `L.icon({iconUrl: 'icon.png', iconSize: [32, 32]})`
+- **radius**: (Used for circle markers) Defines the radius of the point in pixels or meters.
+  - Example: `{ "radius": 10 }`
+- **color**: The color of the point (usually for circle markers).
+  - Example: `{ "color": "#FF0000" }` (Red color)
+- **fillColor**: The color used to fill the marker (for circles and circle markers).
+  - Example: `{ "fillColor": "#FFAAAA" }`
+- **fillOpacity**: The opacity of the fill color. A value between 0 and 1.
+  - Example: `{ "fillOpacity": 0.6 }`
+- **opacity**: The overall opacity of the point (stroke or fill). A value between 0 and 1.
+  - Example: `{ "opacity": 1.0 }`
+- **weight**: (Leaflet-specific) The width of the point's outline (for circles).
+  - Example: `{ "weight": 2 }`
+- **popupContent**: (Optional, but commonly used) A popup to display additional information when the marker is clicked.
+  - Example: `marker.bindPopup("This is a point!")`
+
+#### **Leaflet-Specific Example:**
+
+```javascript
+L.circleMarker([51.5, -0.09], {
+  color: "#3388ff", // Border color
+  fillColor: "#3388ff", // Fill color
+  fillOpacity: 0.5,
+  radius: 10, // Circle radius
+  weight: 2, // Border thickness
+}).addTo(map);
+```
+
+#### **Mapbox-Specific Example:**
+
+```javascript
+map.addLayer({
+  id: "point",
+  type: "circle",
+  source: "points",
+  paint: {
+    "circle-radius": 6, // Radius of the circle
+    "circle-color": "#FF0000", // Circle color
+    "circle-opacity": 0.8,
+  },
+});
+```
+
+### 2. **LineStrings and MultiLineStrings**
+
+Lines are used to represent paths, routes, or boundaries. The following properties are commonly supported:
+
+#### **Common Properties for LineStrings/MultiLineStrings:**
+
+- **color / line-color**: The color of the line.
+  - Example: `{ "color": "#FF0000" }` (Red color)
+- **weight / line-width**: The thickness of the line.
+  - Example: `{ "weight": 4 }` or `{ "line-width": 4 }`
+- **opacity / line-opacity**: The opacity of the line. A value between 0 and 1.
+  - Example: `{ "opacity": 0.5 }` or `{ "line-opacity": 0.5 }`
+- **dashArray**: (Leaflet-specific) Allows the creation of dashed or dotted lines.
+  - Example: `{ "dashArray": "5, 10" }` (5px dash followed by 10px space)
+- **line-join**: (Mapbox-specific) Determines how the corners of the line are joined.
+  - Example: `{ "line-join": "round" }`
+- **line-cap**: (Mapbox-specific) Determines how the ends of the lines are drawn (butt, round, square).
+  - Example: `{ "line-cap": "round" }`
+
+#### **Leaflet-Specific Example:**
+
+```javascript
+L.polyline(
+  [
+    [51.505, -0.09],
+    [51.51, -0.1],
+    [51.51, -0.12],
+  ],
+  {
+    color: "blue", // Line color
+    weight: 5, // Line thickness
+    opacity: 0.7, // Line opacity
+    dashArray: "5, 5", // Dashes (5px line, 5px space)
+  }
+).addTo(map);
+```
+
+#### **Mapbox-Specific Example:**
+
+```javascript
+map.addLayer({
+  id: "line-layer",
+  type: "line",
+  source: "lines",
+  paint: {
+    "line-color": "#FF0000", // Red line
+    "line-width": 4, // Thickness of the line
+    "line-opacity": 0.7, // Opacity
+    "line-dasharray": [2, 4], // Dashed line (2px line, 4px space)
+  },
+});
+```
+
+### 3. **Polygons**
+
+Polygons represent areas or boundaries. The following properties are commonly supported:
+
+#### **Common Properties for Polygons:**
+
+- **fillColor / fill-color**: The color used to fill the polygon.
+  - Example: `{ "fillColor": "#FFAAAA" }` or `{ "fill-color": "#FFAAAA" }`
+- **color / line-color**: The color of the polygon's outline.
+  - Example: `{ "color": "#3388ff" }`
+- **weight / line-width**: The thickness of the polygon's outline.
+  - Example: `{ "weight": 3 }` or `{ "line-width": 3 }`
+- **fillOpacity / fill-opacity**: The opacity of the fill color. A value between 0 and 1.
+  - Example: `{ "fillOpacity": 0.6 }` or `{ "fill-opacity": 0.6 }`
+- **opacity / line-opacity**: The opacity of the polygon's outline. A value between 0 and 1.
+  - Example: `{ "opacity": 0.8 }`
+- **dashArray**: (Leaflet-specific) If you want a dashed or dotted outline for the polygon.
+  - Example: `{ "dashArray": "10, 10" }`
+
+#### **Leaflet-Specific Example:**
+
+```javascript
+L.polygon(
+  [
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047],
+  ],
+  {
+    color: "green", // Border color
+    fillColor: "#3388ff", // Fill color
+    fillOpacity: 0.5, // Fill opacity
+    weight: 3, // Border thickness
+  }
+).addTo(map);
+```
+
+#### **Mapbox-Specific Example:**
+
+```javascript
+map.addLayer({
+  id: "polygon-layer",
+  type: "fill",
+  source: "polygons",
+  paint: {
+    "fill-color": "#00FF00", // Fill color
+    "fill-opacity": 0.5, // Fill opacity
+    "fill-outline-color": "#0000FF", // Border color
+  },
+});
+```
+
+### Additional Properties (Both Leaflet and Mapbox):
+
+- **popupContent**: Popups are common for points and polygons to show more information when clicked.
+- **tooltip**: (Leaflet-specific) Provides additional information in a hoverable tooltip.
+- **interactive**: If set to `false`, the feature will not respond to mouse or touch events.
+  - Example: `{ "interactive": false }`
+- **zIndex**: Controls the stacking order of layers.
+  - Example: `{ "zIndex": 1000 }`
+
+### Mapbox-Specific Properties:
+
+Mapbox supports a wide range of additional properties, especially for styling and interactivity:
+
+- **line-gradient**: Apply a gradient along a line, useful for visualizing changes over the length of a line.
+  - Example: `{ "line-gradient": ["interpolate", ["linear"], ["line-progress"], 0, "blue", 1, "red"] }`
+- **text-field**: Display labels for features such as points, lines, or polygons.
+  - Example: `{ "text-field": ["get", "name"] }`
+- **circle-blur**: Applies a blur effect to points.
+  - Example: `{ "circle-blur": 0.5 }`
+- **icon-image**: Use custom icons or symbols for points.
+  - Example: `{ "icon-image": "marker-icon" }`
+- **symbol-placement**: Control how text or symbols are placed (e.g., along a line).
+  - Example: `{ "symbol-placement": "line" }`
+
+---
+
+### Summary of Key Properties:
+
+| Feature Type    | Key Properties for Leaflet and Mapbox                                       |
+| --------------- | --------------------------------------------------------------------------- |
+| **Points**      | `icon`, `radius`, `color`, `fillColor`, `fillOpacity`, `weight`, `popup`    |
+| **LineStrings** | `color`, `weight`, `opacity`, `dashArray`, `line-join`, `line-cap`, `popup` |
+| **Polygons**    | `fillColor`, `color`, `weight`, `fillOpacity`, `opacity`, `popup`           |
+
+Both \*\*Leaflet
+
+---
+
+## Geojson.io Specific
+```json
+// COLOR RULES
+// Colors can be in short form:
+//   "#ace"
+// or long form
+//   "#aaccee"
+// with or without the # prefix.
+// Colors are interpreted the same as in CSS,
+// in #RRGGBB and #RGB order.
+// But other color formats or named colors
+// are not supported
+{
+    "type": "FeatureCollection",
+    "features": [{ "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0, 0]
+        },
+        "properties": {
+            // OPTIONAL: default ""
+            // A title to show when this item is clicked or
+            // hovered over
+            "title": "A title",
+
+            // OPTIONAL: default ""
+            // A description to show when this item is clicked or
+            // hovered over
+            "description": "A description",
+
+            // OPTIONAL: default "medium"
+            // specify the size of the marker. sizes
+            // can be different pixel sizes in different
+            // implementations
+            // Value must be one of
+            // "small"
+            // "medium"
+            // "large"
+            "marker-size": "medium",
+
+            // OPTIONAL: default ""
+            // a symbol to position in the center of this icon
+            // if not provided or "", no symbol is overlaid
+            // and only the marker is shown
+            // Allowed values include
+            // - Icon ID
+            // - An integer 0 through 9
+            // - A lowercase character "a" through "z"
+            "marker-symbol": "bus",
+
+            // OPTIONAL: default "7e7e7e"
+            // the marker's color
+            //
+            // value must follow COLOR RULES
+            "marker-color": "#fff",
+
+            // OPTIONAL: default "555555"
+            // the color of a line as part of a polygon, polyline, or
+            // multigeometry
+            //
+            // value must follow COLOR RULES
+            "stroke": "#555555",
+
+            // OPTIONAL: default 1.0
+            // the opacity of the line component of a polygon, polyline, or
+            // multigeometry
+            //
+            // value must be a floating point number greater than or equal to
+            // zero and less or equal to than one
+            "stroke-opacity": 1.0,
+
+            // OPTIONAL: default 2
+            // the width of the line component of a polygon, polyline, or
+            // multigeometry
+            //
+            // value must be a floating point number greater than or equal to 0
+            "stroke-width": 2,
+
+            // OPTIONAL: default "555555"
+            // the color of the interior of a polygon
+            //
+            // value must follow COLOR RULES
+            "fill": "#555555",
+
+            // OPTIONAL: default 0.6
+            // the opacity of the interior of a polygon. Implementations
+            // may choose to set this to 0 for line features.
+            //
+            // value must be a floating point number greater than or equal to
+            // zero and less or equal to than one
+            "fill-opacity": 0.5
+        }
+    }]
+}
+```
