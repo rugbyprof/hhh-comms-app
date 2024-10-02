@@ -12,3 +12,5 @@ Wow I just described every project ... ever.
 
 - Terry added the gps points in csv format and geojson format in the [mapping](./mapping/) folder.
 - I left a python file called [process.py](./mapping/process.py) that I used to read csv and convert to geojson. We may or may not use geojson, but I converted everything anyway. Most are messed up, but the 100 mile looks good. See here [100 mile](./mapping/data/geojson/Points_100_Mile.geojson)
+
+A3-BYBJBQ-NMG447-ZFKFC-662M2-XPN3G-GM7LN
