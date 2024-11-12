@@ -4,6 +4,7 @@
 
 - They established 8 categories for volunteers / participants using the app as follows.
 - We thought it may be a good idea to establish placeholders for future categories so the number could be 16 categories with 8 only being used initially.
+- **Fields**
   - Riders (WONT HAVE A MAP DOT) (10k+ people)
   - SAG (GREEN DOT) (max ~75 people)
   - Dispatcher(s) (WONT HAVE A MAP DOT) (max ~5 people)
@@ -23,10 +24,12 @@
 
 ### USER ACCOUNT DATA FIELDS
 
-- They asked for the following data fields be captured with each account.
+- Data fields be captured with each user account.
 - Some of this data will only be visible to administrator / dispatcher security levels only.
-- Other data may be visible to fellow volunteer security levels, TBD).
+- Other data may be visible to fellow volunteers
+- security levels, TBD
 - We placeholdered 3 more fields to give 16 fields total.
+- **Fields**
   - Name
   - Address
   - Email Address
@@ -47,8 +50,9 @@
 ### SECURITY ROLES
 
 - This one may require us to make some decisions for them - explaining security levels vs volunteer roles was a little confusing it seemed on their side so we may need to lead them on this.
-- Any input from anyone on this email chain is welcomed for this part -
-  - **Global Admin **
+- Any input from anyone on this email chain is welcomed for this part
+- **Roles**
+  - **Global Admin**
     - can see all map data and user data,
     - can edit all map or user data,
     - create accounts,
